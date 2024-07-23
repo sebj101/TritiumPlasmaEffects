@@ -7,7 +7,7 @@ M. E. Rudd, Phys. Rev. A 44 (1991)
 
 import numpy as np
 import scipy.constants as sc
-import Constants as myconst
+import src.Constants as myconst
 
 
 class RuddXSec:
@@ -26,7 +26,7 @@ class RuddXSec:
         self.__T = T
         self.__t = self.__T / myconst.IONIZATIONENERGYH
 
-    def __S():
+    def __S(self):
         return 4.0 * np.pi * sc.physical_constants['Bohr radius'][0]**2 * (myconst.RYDBERGEV / myconst.IONIZATIONENERGYH)**2
 
     def __F(self):
