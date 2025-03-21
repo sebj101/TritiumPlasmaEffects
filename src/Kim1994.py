@@ -137,21 +137,18 @@ class Kim1994:
     def _D(self) -> float:
         t = self._T / self._B()
         if self._species == "H":
-            a = 0.0
             b = -2.2473e-2
             c = 1.1775
             d = -4.6264e-1
             e = 8.9064e-2
             f = 0.0
         elif self._species == "He":
-            a = 0.0
             b = 0.0
             c = 1.2178e1
             d = -2.9585e1
             e = 3.1251e1
             f = -1.2175e1
         elif self._species == "H2":
-            a = 0.0
             b = 0.0
             c = 1.1262
             d = 6.3982
